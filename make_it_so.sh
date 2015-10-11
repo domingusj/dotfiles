@@ -3,6 +3,7 @@
 apm stars --user domingusj --install;
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+brew install tmux;
 mv ~/.tmux.conf ~/.tmux.bak;
 -ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
