@@ -10,5 +10,7 @@ mkdir -p ~/.vim/colors;
 cp ~/projects/dotfiles/vim/colors/solarized.vim ~/.vim/colors;
 mv ~/.zshrc ~/.zshrc.bak;
 ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
-cp ~/projects/dotfiles/zsh/agnoster-short.zsh-theme zshrc.symlink ~/.oh-my-zsh/themes/
+ln -sn ~/projects/dotfiles/zsh/agnoster-short.zsh-theme ~/.oh-my-zsh/themes/agnoster-short.zsh-theme
 ~/projects/dotfiles/osx/set-defaults.sh;
+source ~/.zshrc
+
