@@ -12,6 +12,7 @@ mv ~/.tmux.conf ~/.tmux.bak;
 -ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
 ln -sn ~/projects/dotfiles/vim/vimrc.symlink ~/.vimrc;
+ln -sn ~/projects/dotfiles/git/.gitconfig.symlink ~/.gitconfig;
 mkdir -p ~/.vim/colors;
 cp ~/projects/dotfiles/vim/colors/solarized.vim ~/.vim/colors;
 mv ~/.zshrc ~/.zshrc.bak;
