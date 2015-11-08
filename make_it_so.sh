@@ -8,6 +8,7 @@ brew update;
 brew install tmux;
 brew tap ravenac95/sudolikeaboss;
 brew install sudolikeaboss;
+brew install hub;
 mv ~/.tmux.conf ~/.tmux.bak;
 -ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
