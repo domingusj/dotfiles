@@ -9,6 +9,7 @@ brew install tmux;
 brew tap ravenac95/sudolikeaboss;
 brew install sudolikeaboss;
 brew install hub;
+brew cask install p4merge;
 mv ~/.tmux.conf ~/.tmux.bak;
 -ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
