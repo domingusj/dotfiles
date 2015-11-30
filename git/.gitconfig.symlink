@@ -11,7 +11,8 @@
 [push]
     default = matching
 [color]
-    ui = auto
+	ui = true
+	diff = true
 [color "branch"]
     current = yellow bold
     local = green bold
