@@ -4,7 +4,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
 brew update;
-brew docter;
+brew doctor;
 brew install caskroom/cask/brew-cask;
 brew install tree;
 brew install git;
