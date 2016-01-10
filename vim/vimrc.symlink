@@ -20,7 +20,8 @@ Plugin 'tpope/vim-git'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'joshdick/onedark.vim'
+Plugin 'joshdick/airline-onedark.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'tpope/vim-markdown'
 Plugin 'godlygeek/tabular'
@@ -43,8 +44,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax enable             " enable syntax highlighting (previously syntax on).
-colorscheme solarized     " set colorscheme
-set background=dark       " dark theme
+colorscheme onedark       " colorscheme
+let g:airline_theme='onedark'
 set number                " show line numbers
 filetype indent on        " activates indenting for files
 set hlsearch              " highlight searched phrases.
