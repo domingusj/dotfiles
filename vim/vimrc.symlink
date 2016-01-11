@@ -12,21 +12,11 @@ Plugin 'VundleVim/Vundle.vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'scrooloose/nerdTree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-git'
-Plugin 'JamshedVesuna/vim-markdown-preview'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'joshdick/onedark.vim'
 Plugin 'joshdick/airline-onedark.vim'
 Plugin 'rodjek/vim-puppet'
-Plugin 'tpope/vim-markdown'
 Plugin 'godlygeek/tabular'
-Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
 Plugin 'wincent/command-t'
 Plugin 'vim-ruby/vim-ruby'
 " All of your Plugins must be added before the following line
@@ -48,6 +38,8 @@ colorscheme onedark       " colorscheme
 let g:airline_theme='onedark'
 set number                " show line numbers
 filetype indent on        " activates indenting for files
+set showmatch             " highlight matching [{()}]
+set matchtime=3           " time for matching
 set hlsearch              " highlight searched phrases.
 set incsearch             " But do highlight as you type your search.
 set ignorecase            " Make searches case-insensitive.
@@ -71,26 +63,3 @@ imap <up> <nop>           " disable Arrow keys in Insert mode
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
-
-"command t plugin opens new tab
-let g:CommandTAcceptSelectionMap    = '<C-t>' 
-let g:CommandTAcceptSelectionTabMap = '<CR>'
-
-"syntasic settings
-set statusline+=%#warningmsg# 
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" Snippets
-" Trigger configuration. Do not use <tab> if you use
-" https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
