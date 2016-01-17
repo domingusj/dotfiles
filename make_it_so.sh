@@ -34,9 +34,10 @@ brew cask install sourcetree;
 brew cask install utc-menu-clock;
 brew cask install spectacle;
 brew cask install trailer;
+brew cask install evernote;
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mv ~/.tmux.conf ~/.tmux.bak;
--ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
+ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
 ln -sn ~/projects/dotfiles/vim/vimrc.symlink ~/.vimrc;
 ln -sn ~/projects/dotfiles/git/.gitconfig.symlink ~/.gitconfig;
