@@ -81,5 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gam="$HOME/gam/gam.py"
 alias repl="$HOME/projects/platform/scripts/repl"
+alias puppet="/opt/puppetlabs/bin/puppet"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
