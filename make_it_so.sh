@@ -10,6 +10,7 @@ brew install tree;
 brew install git;
 brew install wget;
 brew install tmux;
+brew install ncdu;
 brew cask install spotify;
 brew cask install virtualbox;
 brew cask install vlc;
