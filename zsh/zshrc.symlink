@@ -52,7 +52,8 @@ plugins=(git tmux rand-quote brew gem history history-substring-search vagrant d
 # User configuration
 export PATH="/Users/justin/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
-
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment

@@ -27,6 +27,8 @@ brew cask install 1password;
 brew cask install slack;
 brew cask install atom;
 brew install python;
+brew install go;
+mkdir ~/go;
 brew tap caskroom/fonts;
 brew cask install font-inconsolata;
 apm stars --user domingusj --install;
