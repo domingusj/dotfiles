@@ -17,7 +17,6 @@ Plugin 'joshdick/onedark.vim'
 Plugin 'joshdick/airline-onedark.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
-Plugin 'wincent/command-t'
 Plugin 'vim-ruby/vim-ruby'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
