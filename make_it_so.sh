@@ -43,6 +43,7 @@ mv ~/.tmux.conf ~/.tmux.bak;
 ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
 ln -sn ~/projects/dotfiles/vim/vimrc.symlink ~/.vimrc;
+ln -sn ~/projects/dotfiles/puppet/puppet-lint.rc.symlink ~/.puppet-lint.rc;
 ln -sn ~/projects/dotfiles/git/.gitconfig.symlink ~/.gitconfig;
 mkdir -p ~/.vim/colors;
 mv ~/.zshrc ~/.zshrc.bak;
