@@ -24,7 +24,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
 Plugin 'honza/vim-snippets'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
@@ -45,7 +44,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 syntax enable             " enable syntax highlighting (previously syntax on).
-let g:onedark_termcolors=16
+let g:onedark_termcolors=256
 colorscheme onedark       " colorscheme
 let g:airline_theme='onedark'
 set guifont=Menlo:h16
