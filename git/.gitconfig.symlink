@@ -15,19 +15,16 @@
 	diff = true
 [github]
     user = domingusj
-
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
     required = true
 [diff]
-	tool = p4mergetool
-[difftool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $LOCAL $REMOTE
+	tool = meld
+	guitool = meld
+[difftool]
+    prompt = false
 [merge]
-	tool = p4mergetool
-[mergetool "p4mergetool"]
-	cmd = /Applications/p4merge.app/Contents/Resources/launchp4merge $PWD/$BASE $PWD/$REMOTE $PWD/$LOCAL $PWD/$MERGED
-	trustExitCode = false
+	tool = meld
 [mergetool]
-	keepBackup = false
+    prompt = false
