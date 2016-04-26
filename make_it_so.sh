@@ -21,6 +21,7 @@ brew install sudolikeaboss;
 brew install hub;
 brew cask install github;
 brew cask install p4merge;
+brew install Caskroom/cask/p4v;
 brew cask install google-chrome;
 brew cask install dropbox;
 brew cask install 1password;
