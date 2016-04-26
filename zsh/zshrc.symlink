@@ -50,7 +50,7 @@ ZSH_THEME="af-magic-short"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git tmux rand-quote brew gem history history-substring-search vagrant docker-machine)
 # User configuration
-export PATH="/Users/justin/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="/Users/justin/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
@@ -82,6 +82,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gam="$HOME/gam/gam.py"
 alias repl="$HOME/projects/platform/scripts/repl"
-alias puppet="/opt/puppetlabs/bin/puppet"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
