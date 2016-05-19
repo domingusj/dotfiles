@@ -2,7 +2,7 @@
     name = Justin Domingus
     email = domingusj@gmail.com
 [core]
-    editor = vim
+    editor = nvim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 	excludesfile = /Users/justin/.gitignore_global
 [web]
