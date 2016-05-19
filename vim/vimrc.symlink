@@ -1,3 +1,7 @@
+if has("nvim")
+      let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+set t_Co=256
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -43,7 +47,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-syntax enable             " enable syntax highlighting (previously syntax on).
+syntax enable             " enable syntax highlighting
 let g:onedark_termcolors=256
 colorscheme onedark       " colorscheme
 let g:airline_theme='onedark'

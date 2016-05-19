@@ -78,5 +78,6 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gam="$HOME/gam/gam.py"
 alias repl="$HOME/projects/platform/scripts/repl"
+alias vim="/usr/local/bin/nvim"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
