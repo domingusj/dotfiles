@@ -8,6 +8,7 @@ brew doctor;
 brew tap caskroom/cask;
 brew install caskroom/cask/brew-cask;
 brew install tree;
+brew install neovim/neovim/neovim;
 brew install git;
 brew install wget;
 brew install tmux;
