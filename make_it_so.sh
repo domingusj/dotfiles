@@ -5,6 +5,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
 brew update;
 brew doctor;
+brew tap caskroom/cask;
 brew install caskroom/cask/brew-cask;
 brew install tree;
 brew install git;
