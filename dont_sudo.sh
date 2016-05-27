@@ -33,6 +33,7 @@ brew install python;
 brew install python3;
 brew install go;
 brew install neovim/neovim/neovim;
+brew install docker-compose;
 mkdir ~/go;
 brew tap caskroom/fonts;
 brew cask install font-inconsolata;
