@@ -7,6 +7,7 @@ brew update;
 brew doctor;
 brew tap caskroom/cask;
 brew install tree;
+brew install gpg;
 brew install git;
 brew install wget;
 brew install tmux;
