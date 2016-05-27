@@ -56,5 +56,6 @@ ln -sn ~/projects/dotfiles/git/.gitconfig.symlink ~/.gitconfig;
 mv ~/.zshrc ~/.zshrc.bak;
 ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
 ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
+ln -s ~/projects/dotfiles/iTerm/iTerm_ssh_profiles.zsh ~/.oh-my-zsh/custom/iTerm_ssh_profiles.zsh;
 echo "now run \"chsh -s $(which zsh)\"";
 exit 0;
