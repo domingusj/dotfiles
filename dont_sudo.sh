@@ -1,14 +1,12 @@
 #!/bin/bash
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
 brew update;
 brew doctor;
 brew tap caskroom/cask;
-brew install caskroom/cask/brew-cask;
 brew install tree;
-brew install neovim/neovim/neovim;
 brew install git;
 brew install wget;
 brew install tmux;
@@ -28,13 +26,16 @@ brew cask install 1password;
 brew cask install slack;
 brew cask install atom;
 brew install homebrew/gui/meld;
+brew install ruby;
 brew install python;
 brew install python3;
 brew install go;
+brew install neovim/neovim/neovim;
 mkdir ~/go;
 brew tap caskroom/fonts;
 brew cask install font-inconsolata;
 apm stars --user domingusj --install;
+apm disable wrap-guide;
 brew cask install flux;
 brew cask install utc-menu-clock;
 brew cask install spectacle;
@@ -50,7 +51,5 @@ ln -sn ~/projects/dotfiles/git/.gitconfig.symlink ~/.gitconfig;
 mkdir -p ~/.vim/colors;
 mv ~/.zshrc ~/.zshrc.bak;
 ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
-ln -sn ~/projects/dotfiles/zsh/agnoster-short.zsh-theme ~/.oh-my-zsh/themes/agnoster-short.zsh-theme;
-#uncomment and only run this once
-#~/projects/dotfiles/osx/set-defaults.sh;
+ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
 source ~/.zshrc;

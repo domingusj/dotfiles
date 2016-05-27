@@ -28,3 +28,5 @@
 	tool = meld
 [mergetool]
     prompt = false
+[commit]
+	gpgsign = true
