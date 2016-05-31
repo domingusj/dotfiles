@@ -27,6 +27,7 @@ brew cask install dropbox;
 brew cask install 1password;
 brew cask install slack;
 brew cask install atom;
+brew cask install tunnelblick;
 brew install homebrew/gui/meld;
 brew install ruby;
 brew install python;
