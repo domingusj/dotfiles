@@ -19,9 +19,11 @@ bind-key l select-pane -R
 #
 # color
 set -g default-terminal "screen-256color"
-
 # Start numbering at 1
 set -g base-index 1
 #
 # Automatically set window title
 setw -g automatic-rename
+
+# No escape delay
+set -s escape-time 0
