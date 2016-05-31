@@ -12,8 +12,12 @@
 [push]
     default = matching
 [color]
-	ui = true
-	diff = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
 [github]
     user = domingusj
 [filter "lfs"]
