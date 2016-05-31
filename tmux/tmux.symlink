@@ -17,16 +17,11 @@ bind-key h select-pane -L
 unbind-key l
 bind-key l select-pane -R
 #
-# set-option -g prefix C-a
-# bind-key C-a send-prefix
 # color
 set -g default-terminal "screen-256color"
 
 # Start numbering at 1
 set -g base-index 1
-
-# status bar
-set-option -g status-utf8 on
 #
 # Automatically set window title
 setw -g automatic-rename
