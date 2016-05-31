@@ -1,13 +1,8 @@
-if has("nvim")
-      let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-set t_Co=256
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set nocompatible
 
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
-Plug 'joshdick/onedark.vim'
-Plug 'joshdick/airline-onedark.vim'
 Plug 'rodjek/vim-puppet'
 Plug 'godlygeek/tabular'
 Plug 'vim-ruby/vim-ruby'
@@ -21,13 +16,14 @@ Plug 'honza/vim-snippets'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+Plug 'chriskempson/base16-vim'
 call plug#end()
 
 syntax enable             " enable syntax highlighting
-let g:onedark_termcolors=256
-colorscheme onedark       " colorscheme
-let g:airline_theme='onedark'
+let base16colorspace=256
 set guifont=Menlo:h16
+set background=dark
+colorscheme base16-eighties
 set number                " show line numbers
 filetype indent on        " activates indenting for files
 set showmatch             " highlight matching [{()}]
