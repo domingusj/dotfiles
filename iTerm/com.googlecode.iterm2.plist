@@ -5,7 +5,7 @@
 	<key>AdjustWindowForFontSizeChange</key>
 	<true/>
 	<key>AllowClipboardAccess</key>
-	<false/>
+	<true/>
 	<key>AlternateMouseScroll</key>
 	<true/>
 	<key>AnimateDimming</key>
@@ -983,9 +983,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1206 79 445 77 0 0 2560 1417 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>19 315 606 456 0 0 1280 777 </string>
+	<string>87 942 606 456 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 7 1279 767 0 0 1280 777 </string>
+	<string>1 7 2557 1407 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>2561 7 1277 1404 1280 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -4094,7 +4094,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-31T14:28:48Z</date>
+	<date>2016-06-01T14:53:36Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
