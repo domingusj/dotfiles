@@ -6,7 +6,7 @@ bind-key C-a send-prefix
 # vi movement keys
 set-option -g status-keys vi
 setw -g mode-keys vi
-#
+
 # hjkl pane traversal
 unbind-key j
 bind-key j select-pane -D
@@ -16,16 +16,19 @@ unbind-key h
 bind-key h select-pane -L
 unbind-key l
 bind-key l select-pane -R
-#
+
 # color
 set -g default-terminal "screen-256color"
 set -g status-bg black
 set -g status-fg white
 # Start numbering at 1
 set -g base-index 1
-#
+
 # Automatically set window title
 setw -g automatic-rename
 
 # No escape delay
 set -s escape-time 0
+
+# Mouse support
+set-option -g mouse on
