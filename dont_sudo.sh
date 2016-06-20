@@ -46,8 +46,8 @@ brew cask install flux;
 brew cask install utc-menu-clock;
 brew cask install spectacle;
 brew cask install trailer;
-brew cask install evernote;
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+mkdir ~/projects;
+cd ~/projects && hub clone domingusj/dotfiles;
 mv ~/.tmux.conf ~/.tmux.bak;
 ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
