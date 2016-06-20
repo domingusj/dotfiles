@@ -51,6 +51,8 @@ cd ~/projects && hub clone domingusj/dotfiles;
 mv ~/.tmux.conf ~/.tmux.bak;
 ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
+mkdir ~/.config/nvim;
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim; # install vim-plug
 ln -sn ~/projects/dotfiles/vim/vimrc.symlink ~/.config/nvim/init.vim;
 mv ~/.puppet-lint.rc ~/.puppet-lint.rc.bak;
 ln -sn ~/projects/dotfiles/puppet/puppet-lint.rc.symlink ~/.puppet-lint.rc;
