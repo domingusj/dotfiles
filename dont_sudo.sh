@@ -21,7 +21,6 @@ brew cask install iterm2;
 brew tap ravenac95/sudolikeaboss;
 brew install sudolikeaboss;
 brew install hub;
-brew cask install github;
 brew cask install google-chrome;
 brew cask install dropbox;
 brew cask install 1password;
