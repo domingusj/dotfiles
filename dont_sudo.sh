@@ -2,7 +2,6 @@
 
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
 brew update;
 brew doctor;
 brew tap caskroom/cask;
@@ -60,5 +59,6 @@ mv ~/.zshrc ~/.zshrc.bak;
 ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
 ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
 ln -s ~/projects/dotfiles/iTerm/iTerm_ssh_profiles.zsh ~/.oh-my-zsh/custom/iTerm_ssh_profiles.zsh;
+cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
 echo "now run \"chsh -s $(which zsh)\"";
 exit 0;
