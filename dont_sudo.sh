@@ -46,6 +46,7 @@ brew cask install flux;
 brew cask install utc-menu-clock;
 brew cask install spectacle;
 brew cask install trailer;
+gem install puppet-lint;
 mkdir ~/projects;
 cd ~/projects && hub clone domingusj/dotfiles;
 mv ~/.tmux.conf ~/.tmux.bak;
