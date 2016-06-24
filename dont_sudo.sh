@@ -20,6 +20,7 @@ brew cask install spotify;
 brew cask install virtualbox;
 brew cask install vlc;
 brew cask install vagrant;
+brew cask install terraform;
 brew install Caskroom/versions/iterm2-beta;
 brew tap ravenac95/sudolikeaboss;
 brew install sudolikeaboss;
