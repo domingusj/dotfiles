@@ -23,7 +23,6 @@ call plug#end()
 syntax enable             " enable syntax highlighting
 let base16colorspace=256
 let g:airline_theme='base16_eighties'
-set guifont=Menlo:h16
 set background=dark
 colorscheme base16-eighties
 set number                " show line numbers
