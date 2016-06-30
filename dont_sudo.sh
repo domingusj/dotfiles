@@ -30,6 +30,7 @@ brew cask install slack;
 brew cask install atom;
 brew cask install tunnelblick;
 brew cask install screenhero;
+brew cask install puppet;
 brew install homebrew/gui/meld;
 brew install ruby;
 brew install python;
