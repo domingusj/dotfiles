@@ -14,6 +14,7 @@ brew install git;
 brew install wget;
 brew install tmux;
 brew install ncdu;
+brew install transcrypt;
 brew install reattach-to-user-namespace;
 brew install ansible;
 brew cask install spotify;
