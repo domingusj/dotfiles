@@ -47,7 +47,7 @@ ZSH_THEME="af-magic-short"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux rand-quote brew gem history history-substring-search vagrant docker-machine)
+plugins=(git virtualenv tmux rand-quote brew gem history history-substring-search vagrant docker-machine)
 # User configuration
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
