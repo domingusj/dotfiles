@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# make sure git is working first
+git
+read -r -p "Is git installed and working? [y/N] " response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+then
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update;
@@ -67,5 +72,8 @@ ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
 ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
 ln -s ~/projects/dotfiles/iTerm/iTerm_ssh_profiles.zsh ~/.oh-my-zsh/custom/iTerm_ssh_profiles.zsh;
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
-echo "now run \"chsh -s $(which zsh)\"";
+echo "now run \"chsh -s $(which zsh)\", setup your ssh keys, gpg keys, and have a nice day.;"
 exit 0;
+else
+exit 1;
+fi
