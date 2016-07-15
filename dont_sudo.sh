@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# make sure git is working first
+# make sure XCode and git are working first
 git
-read -r -p "Is git installed and working? [y/N] " response
+read -r -p "First, install XCode from the App Store and make sure git is installed and working. Ready to proceed?[y/N] " response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
 then
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)";
@@ -61,6 +61,7 @@ mv ~/.tmux.conf ~/.tmux.bak;
 ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.vimrc ~/.vimrc.bak;
 mkdir ~/.config/nvim;
+brew install neovim/neovim/neovim;
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim; # install vim-plug
 ln -sn ~/projects/dotfiles/vim/vimrc.symlink ~/.config/nvim/init.vim;
 mv ~/.puppet-lint.rc ~/.puppet-lint.rc.bak;
@@ -72,6 +73,7 @@ ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
 ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
 ln -s ~/projects/dotfiles/iTerm/iTerm_ssh_profiles.zsh ~/.oh-my-zsh/custom/iTerm_ssh_profiles.zsh;
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
+touch .hushlogin # disable login message
 echo "now run \"chsh -s $(which zsh)\", setup your ssh keys, gpg keys, and have a nice day.;"
 exit 0;
 else
