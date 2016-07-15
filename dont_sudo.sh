@@ -2,6 +2,7 @@
 
 # make sure XCode and git are working first
 git
+sudo xcodebuild -license
 read -r -p "First, install XCode from the App Store and make sure git is installed and working. Ready to proceed?[y/N] " response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
 then
@@ -42,6 +43,7 @@ brew install ruby;
 brew install python;
 brew install python3;
 brew install go;
+# export SED=$(which sed) - if there are problems installing neovim
 brew install neovim/neovim/neovim;
 brew cask install dockertoolbox;
 brew install docker-compose;
