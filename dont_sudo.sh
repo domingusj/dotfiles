@@ -48,6 +48,7 @@ brew cask install terraform;
 brew cask install puppet;
 gem install puppet-lint;
 brew install ruby;
+gem install bundle;
 brew install python;
 brew install python3;
 mkdir ~/go;
