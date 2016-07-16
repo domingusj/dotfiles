@@ -74,6 +74,10 @@ mv ~/.zshrc ~/.zshrc.bak;
 ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
 ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
 ln -s ~/projects/dotfiles/iTerm/iTerm_ssh_profiles.zsh ~/.oh-my-zsh/custom/iTerm_ssh_profiles.zsh;
+mv ~/.atom/keymap.cson ~/.atom/keymap.cson.bak;
+mv ~/.atom/config.cson ~/.atom/config.cson.bak;
+ln -s ~/projects/dotfiles/atom/keymap.cson ~/.atom/keymap.cson;
+ln -s ~/projects/dotfiles/atom/config.cson ~/.atom/config.cson;
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
 touch .hushlogin # disable login message
 echo "now run \"chsh -s $(which zsh)\", setup your ssh keys, gpg keys, and have a nice day.;"

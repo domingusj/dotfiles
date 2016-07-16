@@ -1,0 +1,22 @@
+"*":
+  core:
+    disabledPackages: [
+      "wrap-guide"
+    ]
+  editor: {}
+  "exception-reporting":
+    userId: "79967b20-c933-87c9-85b8-ea6b20c3a648"
+  minimap:
+    plugins:
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      linter: true
+      linterDecorationsZIndex: 0
+      "minimap-autohide": true
+      "minimap-autohideDecorationsZIndex": 0
+  welcome:
+    showOnStartup: false
