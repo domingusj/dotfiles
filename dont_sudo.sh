@@ -33,6 +33,7 @@ brew cask install font-inconsolata;
 brew install git;
 brew install hub;
 brew install tree;
+brew install diff-so-fancy;
 brew install gpg;
 brew install git;
 brew install wget;
