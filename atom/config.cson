@@ -10,6 +10,9 @@
   editor: {}
   "exception-reporting":
     userId: "79967b20-c933-87c9-85b8-ea6b20c3a648"
+  "linter-puppet-lint":
+    skip140Chars: true
+    skip80Chars: true
   minimap:
     plugins:
       cursorline: true
