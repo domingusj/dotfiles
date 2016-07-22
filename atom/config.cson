@@ -2,6 +2,7 @@
   core:
     disabledPackages: [
       "wrap-guide"
+      "activate-power-mode"
     ]
   editor: {}
   "exception-reporting":
