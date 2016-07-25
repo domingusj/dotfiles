@@ -69,8 +69,10 @@ mv ~/.atom/config.cson ~/.atom/config.cson.bak;
 ln -s ~/projects/dotfiles/atom/keymap.cson ~/.atom/keymap.cson;
 ln -s ~/projects/dotfiles/atom/config.cson ~/.atom/config.cson;
 # symlink dotfiles
-mkdir ~/projects;
+mkdir ~/projects ~/ansible;
 cd ~/projects && hub clone domingusj/dotfiles;
+ln -sn ~/projects/dotfiles/ansible/ansible.cfg ~/ansible.cfg;
+ln -sn ~/projects/dotfiles/ssh/config ~/.ssh/config;
 mv ~/.tmux.conf ~/.tmux.bak;
 ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
 mv ~/.puppet-lint.rc ~/.puppet-lint.rc.bak;

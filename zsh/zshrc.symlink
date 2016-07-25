@@ -53,7 +53,10 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sb
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/.rvm/bin # RVM
 source $ZSH/oh-my-zsh.sh
+
+export SLACK_USERNAME='justindomingus'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -80,5 +83,5 @@ alias repl="$HOME/projects/platform/scripts/repl"
 alias vim="/usr/local/bin/nvim"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
