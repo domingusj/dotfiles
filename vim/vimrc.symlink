@@ -45,6 +45,7 @@ set smarttab              " use tabs at the start of a line, spaces elsewhere
 set nowrap                " don't wrap text
 set backspace=2           " allow backspace
 set noswapfile            " no swap
+set clipboard+=unnamedplus
 
 let g:ctrlp_map = '<c-p>'     " Ctrl-P plugin mapping
 let g:ctrlp_cmd = 'CtrlP'     " Ctrl-P plugin mapping
