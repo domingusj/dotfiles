@@ -56,7 +56,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.rvm/bin # RVM
 source $ZSH/oh-my-zsh.sh
 
-export SLACK_USERNAME='justindomingus'
+export CAREZONE_SLACK_USERNAME='justindomingus'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
