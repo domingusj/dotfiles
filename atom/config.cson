@@ -4,6 +4,10 @@
       "wrap-guide"
       "activate-power-mode"
     ]
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor: {}
   "exception-reporting":
     userId: "79967b20-c933-87c9-85b8-ea6b20c3a648"
@@ -29,7 +33,7 @@
     has_been_configured: true
     nighttime_syntax_theme: "one-dark-syntax"
     nighttime_ui_theme: "one-dark-ui"
-    when_does_it_get_dark: 1400
+    when_does_it_get_dark: 1830
     when_does_it_get_light: 700
   welcome:
     showOnStartup: false
