@@ -17,17 +17,16 @@ Plug 'honza/vim-snippets'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
-Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/syntastic'
 Plug 'yssl/QFEnter'
-Plug 'lloeki/vim-one-colorschemes'
+Plug 'rakr/vim-one'
 call plug#end()
 
 syntax enable             " enable syntax highlighting
-"let base16colorspace=256
-"let g:airline_theme='base16_eighties'
+colorscheme one
 set background=light
-colorscheme one-light
+let g:one_allow_italics = 1
+let g:airline_theme='one'
 set number                " show line numbers
 filetype indent on        " activates indenting for files
 set showmatch             " highlight matching [{()}]
