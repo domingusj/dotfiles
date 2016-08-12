@@ -20,13 +20,14 @@ Plug 'garbas/vim-snipmate'
 Plug 'chriskempson/base16-vim'
 Plug 'scrooloose/syntastic'
 Plug 'yssl/QFEnter'
+Plug 'lloeki/vim-one-colorschemes'
 call plug#end()
 
 syntax enable             " enable syntax highlighting
-let base16colorspace=256
-let g:airline_theme='base16_eighties'
-set background=dark
-colorscheme base16-eighties
+"let base16colorspace=256
+"let g:airline_theme='base16_eighties'
+set background=light
+colorscheme one-light
 set number                " show line numbers
 filetype indent on        " activates indenting for files
 set showmatch             " highlight matching [{()}]
