@@ -56,8 +56,6 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.rvm/bin # RVM
 source $ZSH/oh-my-zsh.sh
 
-export CAREZONE_SLACK_USERNAME='justindomingus'
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -81,7 +79,10 @@ export EDITOR='nvim'
 alias gam="$HOME/gam/gam.py"
 alias repl="$HOME/projects/platform/scripts/repl"
 alias vim="/usr/local/bin/nvim"
-source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 
+source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+export CAREZONE_SLACK_USERNAME='justindomingus'
 
