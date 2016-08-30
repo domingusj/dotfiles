@@ -47,7 +47,7 @@ ZSH_THEME="af-magic-short"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize colored-man-pages virtualenv tmux brew brew-cask gem history history-substring-search vagrant docker docker-machine docker-compose terraform kubectl)
+plugins=(git colorize colored-man-pages virtualenv tmux brew brew-cask gem history history-substring-search vagrant docker docker-machine docker-compose terraform kubectl zsh-navigation-tools)
 # User configuration
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -81,7 +81,10 @@ alias vim="/usr/local/bin/nvim"
 
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export CAREZONE_SLACK_USERNAME='justindomingus'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-export CAREZONE_SLACK_USERNAME='justindomingus'
 source <(kubectl completion zsh)
+complete -o nospace -o default -F _python_argcomplete "gcloud"
+complete -o default -F _bq_completer bq
+complete -o nospace -F _python_argcomplete gsutil
