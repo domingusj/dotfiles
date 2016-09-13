@@ -13,7 +13,7 @@ brew doctor;
 brew tap caskroom/cask;
 # brew packages
 brew cask install google-chrome;
-brew cask install spotify;
+brew cask install google-play-music-desktop-player;
 brew cask install virtualbox;
 brew install Caskroom/versions/iterm2-beta;
 brew cask install slack;
