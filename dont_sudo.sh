@@ -43,6 +43,10 @@ brew install transcrypt;
 brew install reattach-to-user-namespace;
 brew install homebrew/gui/meld;
 brew install watch;
+# cloud tools
+brew cask install google-cloud-sdk;
+brew install kubectl;
+brew install awscli;
 # languages
 brew install ansible;
 brew cask install vagrant;
