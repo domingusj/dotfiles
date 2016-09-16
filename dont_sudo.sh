@@ -43,6 +43,7 @@ brew install transcrypt;
 brew install reattach-to-user-namespace;
 brew install homebrew/gui/meld;
 brew install watch;
+brew install jq;
 # cloud tools
 brew cask install google-cloud-sdk;
 brew install kubectl;
