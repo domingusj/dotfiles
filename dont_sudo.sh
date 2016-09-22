@@ -48,10 +48,14 @@ brew install jq;
 brew cask install google-cloud-sdk;
 brew install kubectl;
 brew install awscli;
-# languages
+# Hashicorp
 brew install ansible;
 brew cask install vagrant;
+brew install vagrant-completion;
 brew cask install terraform;
+brew install packer;
+brew install packer-completion;
+# languages
 brew cask install puppet;
 gem install puppet-lint;
 brew install ruby;
