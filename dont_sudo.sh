@@ -46,7 +46,6 @@ brew install watch;
 brew install jq;
 # cloud tools
 brew cask install google-cloud-sdk;
-brew install kubectl;
 brew install awscli;
 # Hashicorp
 brew install ansible;
@@ -62,6 +61,7 @@ brew install ruby;
 gem install bundle;
 brew install python;
 brew install python3;
+brew install npm;
 mkdir ~/go;
 brew install go;
 # neovim
