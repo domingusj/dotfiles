@@ -4,12 +4,8 @@
       "wrap-guide"
       "activate-power-mode"
     ]
-    themes: [
-      "one-light-ui"
-      "one-light-syntax"
-    ]
-  editor:
-    fontSize: 16
+    telemetryConsent: "limited"
+  editor: {}
   "exception-reporting":
     userId: "79967b20-c933-87c9-85b8-ea6b20c3a648"
   linter:
@@ -31,8 +27,8 @@
       "minimap-autohide": true
       "minimap-autohideDecorationsZIndex": 0
   sunset:
-    daytime_syntax_theme: "one-light-syntax"
-    daytime_ui_theme: "one-light-ui"
+    daytime_syntax_theme: "one-dark-syntax"
+    daytime_ui_theme: "one-dark-ui"
     has_been_configured: true
     nighttime_syntax_theme: "one-dark-syntax"
     nighttime_ui_theme: "one-dark-ui"
