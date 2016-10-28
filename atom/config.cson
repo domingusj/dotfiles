@@ -5,7 +5,8 @@
       "activate-power-mode"
     ]
     telemetryConsent: "limited"
-  editor: {}
+  editor:
+    fontSize: 15
   "exception-reporting":
     userId: "79967b20-c933-87c9-85b8-ea6b20c3a648"
   linter:
