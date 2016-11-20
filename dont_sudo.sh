@@ -23,6 +23,7 @@ brew cask install screenhero;
 brew tap caskroom/fonts;
 brew cask install font-inconsolata;
 brew cask install docker;
+bew cask install gpgtools;
 # shell packages
 brew install git;
 brew install hub;
