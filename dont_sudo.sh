@@ -1,11 +1,6 @@
 #!/bin/bash
-
-# make sure XCode and git are working first
-git
+# make sure XCode is working first
 sudo xcodebuild -license
-read -r -p "First, install XCode from the App Store and make sure git is installed and working. Ready to proceed?[y/N] " response
-if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
-then
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"; # oh-my-zsh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # Homebrew
 brew update;
@@ -15,7 +10,7 @@ brew tap caskroom/cask;
 brew cask install google-chrome;
 brew cask install google-play-music-desktop-player;
 brew cask install virtualbox;
-brew install Caskroom/versions/iterm2-beta;
+brew cask install iterm2;
 brew cask install slack;
 brew cask install dropbox;
 brew cask install 1password;
@@ -25,10 +20,9 @@ brew cask install flux;
 brew cask install utc-menu-clock;
 brew cask install spectacle;
 brew cask install screenhero;
-brew cask install dockertoolbox; # this will probably change names
-brew install docker-compose;
 brew tap caskroom/fonts;
 brew cask install font-inconsolata;
+brew cask install docker;
 # shell packages
 brew install git;
 brew install hub;
@@ -47,6 +41,7 @@ brew install jq;
 # cloud tools
 brew cask install google-cloud-sdk;
 brew install awscli;
+gcloud components install kubectl;
 # Hashicorp
 brew install ansible;
 brew cask install vagrant;
@@ -62,43 +57,26 @@ gem install bundle;
 brew install python;
 brew install python3;
 brew install npm;
+brew install node;
+brew install ruby;
+\curl -sSL https://get.rvm.io | bash # RVM
 mkdir ~/go;
 brew install go;
 # neovim
 # export SED=$(which sed) - if there are problems installing neovim
 brew install neovim/neovim/neovim;
-mkdir ~/.config/nvim;
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim; # install vim-plug
+mkdir -p ~/.config/nvim;
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -sn ~/projects/dotfiles/vim/vimrc.symlink ~/.config/nvim/init.vim;
 # atom config
 brew cask install atom;
+mkdir ~/.atom;
+atom ~/;
 apm stars --user domingusj --install;
 apm disable wrap-guide;
 mv ~/.atom/keymap.cson ~/.atom/keymap.cson.bak;
 mv ~/.atom/config.cson ~/.atom/config.cson.bak;
 ln -s ~/projects/dotfiles/atom/keymap.cson ~/.atom/keymap.cson;
 ln -s ~/projects/dotfiles/atom/config.cson ~/.atom/config.cson;
-# symlink dotfiles
-mkdir ~/projects ~/ansible;
-cd ~/projects && hub clone domingusj/dotfiles;
-ln -sn ~/projects/dotfiles/ansible/ansible.cfg ~/ansible.cfg;
-ln -sn ~/projects/dotfiles/ssh/config ~/.ssh/config;
-mv ~/.tmux.conf ~/.tmux.bak;
-ln -sn ~/projects/dotfiles/tmux/tmux.symlink ~/.tmux.conf;
-mv ~/.puppet-lint.rc ~/.puppet-lint.rc.bak;
-ln -sn ~/projects/dotfiles/puppet/puppet-lint.rc.symlink ~/.puppet-lint.rc;
-mv ~/.gitconfig ~/.gitconfig.bak;
-ln -sn ~/projects/dotfiles/git/.gitconfig.symlink ~/.gitconfig;
-mv ~/.zshrc ~/.zshrc.bak;
-ln -sn ~/projects/dotfiles/zsh/zshrc.symlink ~/.zshrc;
-ln -sn ~/projects/dotfiles/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme;
-ln -sn ~/projects/dotfiles/iTerm/iTerm_ssh_profiles.zsh ~/.oh-my-zsh/custom/iTerm_ssh_profiles.zsh;
-# zsh / shell config
-cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git;
-touch .hushlogin # disable login message
-echo "now run \"chsh -s $(which zsh)\", setup your ssh keys, gpg keys, and have a nice day.";
 exit 0;
-else
-echo "Ok, go set those up first and come back later";
-exit 1;
-fi
