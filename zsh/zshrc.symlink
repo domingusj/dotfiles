@@ -88,3 +88,12 @@ source <(kubectl completion zsh)
 complete -o nospace -o default -F _python_argcomplete "gcloud"
 complete -o default -F _bq_completer bq
 complete -o nospace -F _python_argcomplete gsutil
+
+if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+    source ~/.gnupg/.gpg-agent-info
+    export GPG_AGENT_INFO
+else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+fi
+
+source /usr/local/bin/aws_zsh_completer.sh
