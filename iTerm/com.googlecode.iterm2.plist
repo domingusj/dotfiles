@@ -685,9 +685,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>218 99 918 512 0 0 1440 877 </string>
+	<string>-1360 568 937 464 -1461 420 1080 1897 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 5 1432 867 0 0 1440 877 </string>
+	<string>6 5 1072 1887 0 0 1080 1897 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1 11 1438 860 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1572,8 +1572,14 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>DCCD44BA-AA85-4F79-BF70-0D2B66EF6F94</string>
+	<key>NoSyncLastTipTime</key>
+	<real>501464324.57973498</real>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>501287523.38641602</real>
+	<key>NoSyncTipsDisabled</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1642,7 +1648,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-11-19T23:04:03Z</date>
+	<date>2016-11-21T00:56:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1712,7 +1718,7 @@
 				<key>Saved Window Type</key>
 				<integer>0</integer>
 				<key>Screen</key>
-				<integer>2</integer>
+				<integer>0</integer>
 				<key>Selected Tab Index</key>
 				<integer>0</integer>
 				<key>Tabs</key>
@@ -1731,6 +1737,18 @@
 										<dict>
 											<key>ASCII Anti Aliased</key>
 											<true/>
+											<key>AWDS Pane Directory</key>
+											<string></string>
+											<key>AWDS Pane Option</key>
+											<string>No</string>
+											<key>AWDS Tab Directory</key>
+											<string></string>
+											<key>AWDS Tab Option</key>
+											<string>No</string>
+											<key>AWDS Window Directory</key>
+											<string></string>
+											<key>AWDS Window Option</key>
+											<string>No</string>
 											<key>Allow Title Reporting</key>
 											<false/>
 											<key>Ambiguous Double Width</key>
@@ -2052,7 +2070,7 @@
 											<key>Custom Command</key>
 											<string>No</string>
 											<key>Custom Directory</key>
-											<string>Recycle</string>
+											<string>Advanced</string>
 											<key>Default Bookmark</key>
 											<string>No</string>
 											<key>Disable Printing</key>
@@ -2601,6 +2619,8 @@
 										<array>
 											<string>/Users/justind</string>
 											<string>/Users/justind</string>
+											<string>/Users/justind</string>
+											<string>/Users/justind</string>
 										</array>
 										<key>Environment</key>
 										<dict>
@@ -2632,7 +2652,7 @@
 										<key>Rows</key>
 										<integer>93</integer>
 										<key>Server PID</key>
-										<integer>7341</integer>
+										<integer>22212</integer>
 										<key>Session Default Name</key>
 										<string>Default</string>
 										<key>Session GUID</key>
@@ -2640,7 +2660,7 @@
 										<key>Session Name</key>
 										<string>~</string>
 										<key>Session Window Title</key>
-										<string>justind@justind-15mbp: ~</string>
+										<string>justind@justind-mbp: ~</string>
 										<key>Shell Integration Ever Used</key>
 										<true/>
 										<key>Substitutions</key>
@@ -2690,9 +2710,9 @@
 				<key>Window Type</key>
 				<integer>0</integer>
 				<key>X Origin</key>
-				<real>-1076</real>
+				<real>6</real>
 				<key>Y Origin</key>
-				<real>-585</real>
+				<real>5</real>
 			</dict>
 		</array>
 	</dict>
