@@ -1,0 +1,20 @@
+AddKeysToAgent yes
+
+Host *
+ServerAliveInterval 60
+IdentityFile ~/.ssh/domingusj_rsa
+
+Host *.github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/domingusj_rsa
+
+Host *.czops.net
+User justind
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/justind_rsa
+
+Host *.corp.carezone.com
+User justind
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/justind_rsa
+
