@@ -69,14 +69,10 @@ mv ~/.vimrc ~/.vimrc.bak
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -s ~/projects/dotfiles/vim/vimrc.symlink ~/.vimrc
-# atom config
-brew cask install atom
+# atom
 mkdir ~/.atom
 atom ~/ # open atom to initialize
 apm stars --user domingusj --install
-apm disable wrap-guide
-mv ~/.atom/keymap.cson ~/.atom/keymap.cson.bak
-mv ~/.atom/config.cson ~/.atom/config.cson.bak
-ln -s ~/projects/dotfiles/atom/keymap.cson ~/.atom/keymap.cson
-ln -s ~/projects/dotfiles/atom/config.cson ~/.atom/config.cson
+brew cask install atom
+echo "Done installing, now run ./symlink.sh to setup dotfiles"
 exit 0
