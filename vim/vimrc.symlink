@@ -1,6 +1,4 @@
-if (has("termguicolors"))
-  set termguicolors
-endif
+set termguicolors
 set nocompatible
 
 call plug#begin('~/.vim/plugged')
@@ -28,7 +26,7 @@ call plug#end()
 syntax enable             " enable syntax highlighting
 set background=dark
 colorscheme one
-let g:one_allow_italics = 1
+let g:one_allow_italics=1
 let g:airline_theme='one'
 set number                " show line numbers
 filetype indent on        " activates indenting for files
@@ -51,6 +49,11 @@ set backspace=2           " allow backspace
 set noswapfile            " no swap
 set clipboard=unnamed
 set mouse=a
+highlight Comment cterm=italic
+set t_ZH=[3m
+set t_ZR=[23m
+set t_8b=[48;2;%lu;%lu;%lum
+set t_8f=[38;2;%lu;%lu;%lum
 let g:ctrlp_map = '<c-p>'     " Ctrl-P plugin mapping
 let g:ctrlp_cmd = 'CtrlP'     " Ctrl-P plugin mapping
 map <C-\> :NERDTreeToggle<CR> " NerdTree mapping
