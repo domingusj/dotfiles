@@ -691,9 +691,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>229 73 796 473 0 0 1440 877 </string>
+	<string>101 84 918 512 0 0 1080 1897 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 5 1432 867 0 0 1440 877 </string>
+	<string>6 5 1072 1887 0 0 1080 1897 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1 11 1438 860 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -708,11 +708,11 @@
 			<key>AWDS Tab Directory</key>
 			<string></string>
 			<key>AWDS Tab Option</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>AWDS Window Directory</key>
 			<string></string>
 			<key>AWDS Window Option</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Allow Title Reporting</key>
 			<false/>
 			<key>Ambiguous Double Width</key>
@@ -1034,7 +1034,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>Advanced</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1658,7 +1658,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-04T15:03:57Z</date>
+	<date>2017-01-10T18:07:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
