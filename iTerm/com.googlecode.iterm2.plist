@@ -689,11 +689,11 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>412 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>269 139 606 456 0 0 1440 877 </string>
+	<string>153 476 606 456 0 0 1080 1897 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>101 84 918 512 0 0 1080 1897 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>6 5 1072 1887 0 0 1080 1897 </string>
+	<string>573 -895 1432 867 569 -900 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1 11 1438 860 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
@@ -1658,11 +1658,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-01-10T18:07:57Z</date>
+	<date>2017-03-09T17:03:52Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
+	<key>Secure Input</key>
+	<true/>
 	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1718,7 +1720,7 @@
 				<key>Has Toolbelt</key>
 				<false/>
 				<key>Height</key>
-				<real>1887</real>
+				<real>867</real>
 				<key>Hide After Opening</key>
 				<false/>
 				<key>Hiding Toolbelt Should Resize Window</key>
@@ -1728,7 +1730,7 @@
 				<key>Saved Window Type</key>
 				<integer>0</integer>
 				<key>Screen</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Selected Tab Index</key>
 				<integer>0</integer>
 				<key>Tabs</key>
@@ -1754,11 +1756,11 @@
 											<key>AWDS Tab Directory</key>
 											<string></string>
 											<key>AWDS Tab Option</key>
-											<string>No</string>
+											<string>Recycle</string>
 											<key>AWDS Window Directory</key>
 											<string></string>
 											<key>AWDS Window Option</key>
-											<string>No</string>
+											<string>Recycle</string>
 											<key>Allow Title Reporting</key>
 											<false/>
 											<key>Ambiguous Double Width</key>
@@ -2080,7 +2082,7 @@
 											<key>Custom Command</key>
 											<string>No</string>
 											<key>Custom Directory</key>
-											<string>Advanced</string>
+											<string>Recycle</string>
 											<key>Default Bookmark</key>
 											<string>No</string>
 											<key>Disable Printing</key>
@@ -2622,7 +2624,7 @@
 										<key>Bookmark Name</key>
 										<string>Default</string>
 										<key>Columns</key>
-										<integer>118</integer>
+										<integer>158</integer>
 										<key>Commands</key>
 										<array/>
 										<key>Directories</key>
@@ -2631,11 +2633,19 @@
 											<string>/Users/justind</string>
 											<string>/Users/justind</string>
 											<string>/Users/justind</string>
+											<string>/Users/justind</string>
+											<string>/Users/justind/projects/carezone/puppet-catalog</string>
+											<string>/Users/justind/projects/carezone/puppet-catalog</string>
+											<string>/Users/justind/projects/carezone/puppet-catalog</string>
+											<string>/Users/justind/projects/carezone/puppet-catalog</string>
+											<string>/Users/justind/projects/carezone/puppet-catalog</string>
+											<string>/Users/justind</string>
+											<string>/Users/justind</string>
 										</array>
 										<key>Environment</key>
 										<dict>
 											<key>PWD</key>
-											<string>/Users/justind</string>
+											<string>/Users/justind/projects/carezone/puppet-catalog</string>
 										</dict>
 										<key>Hosts</key>
 										<array>
@@ -2660,9 +2670,9 @@
 											<string>Shell Launcher</string>
 										</dict>
 										<key>Rows</key>
-										<integer>93</integer>
+										<integer>42</integer>
 										<key>Server PID</key>
-										<integer>22212</integer>
+										<integer>71297</integer>
 										<key>Session Default Name</key>
 										<string>Default</string>
 										<key>Session GUID</key>
@@ -2685,9 +2695,9 @@
 									<key>frame</key>
 									<dict>
 										<key>height</key>
-										<real>1864</real>
+										<real>844</real>
 										<key>width</key>
-										<real>1072</real>
+										<real>1432</real>
 										<key>x</key>
 										<real>0.0</real>
 										<key>y</key>
@@ -2700,9 +2710,9 @@
 							<key>frame</key>
 							<dict>
 								<key>height</key>
-								<real>1864</real>
+								<real>844</real>
 								<key>width</key>
-								<real>1072</real>
+								<real>1432</real>
 								<key>x</key>
 								<real>0.0</real>
 								<key>y</key>
@@ -2716,13 +2726,13 @@
 				<key>TerminalGuid</key>
 				<string>pty-2CDCE5A8-1C63-416A-9370-25650C943571</string>
 				<key>Width</key>
-				<real>1072</real>
+				<real>1432</real>
 				<key>Window Type</key>
 				<integer>0</integer>
 				<key>X Origin</key>
-				<real>6</real>
+				<real>573</real>
 				<key>Y Origin</key>
-				<real>5</real>
+				<real>-895</real>
 			</dict>
 		</array>
 	</dict>
@@ -2737,6 +2747,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.13</string>
+	<string>3.0.15</string>
 </dict>
 </plist>
