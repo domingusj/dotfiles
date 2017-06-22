@@ -49,7 +49,7 @@ ZSH_THEME="af-magic-short"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git colorize colored-man-pages virtualenv tmux brew brew-cask gem history history-substring-search vagrant docker docker-machine docker-compose terraform kubectl zsh-navigation-tools)
 # User configuration
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin"
+export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
@@ -83,6 +83,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 source <(kubectl completion zsh)
+source <(helm completion zsh)
 complete -o nospace -o default -F _python_argcomplete "gcloud"
 complete -o default -F _bq_completer bq
 complete -o nospace -F _python_argcomplete gsutil
@@ -98,3 +99,4 @@ source /usr/local/bin/aws_zsh_completer.sh
 
 export CAREZONE_SLACK_USERNAME='justind'
 
+export PATH="/usr/local/sbin:$PATH"
