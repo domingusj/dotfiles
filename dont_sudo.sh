@@ -24,6 +24,7 @@ brew tap ravenac95/sudolikeaboss
 brew install sudolikeaboss
 brew tap caskroom/fonts
 brew cask install font-inconsolata
+brew cask install visual-studio-code
 # shell packages
 brew install diff-so-fancy
 brew install git
@@ -69,10 +70,5 @@ mv ~/.vimrc ~/.vimrc.bak
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -s ~/projects/dotfiles/vim/vimrc.symlink ~/.vimrc
-# atom
-mkdir ~/.atom
-atom ~/ # open atom to initialize
-apm stars --user domingusj --install
-brew cask install atom
 echo "Done installing, now run ./symlink.sh to setup dotfiles"
 exit 0
