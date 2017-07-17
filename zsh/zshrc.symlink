@@ -47,7 +47,7 @@ ZSH_THEME="af-magic-short"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize colored-man-pages virtualenv tmux brew brew-cask gem history history-substring-search vagrant docker docker-machine docker-compose terraform kubectl zsh-navigation-tools)
+plugins=(git colorize colored-man-pages virtualenv tmux brew brew-cask gem history history-substring-search vagrant docker docker-machine docker-compose terraform kubectl zsh-navigation-tools you-should-use)
 # User configuration
 export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -78,6 +78,7 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/kubectl"
 alias dock="/usr/local/bin/docker"
+alias ls="ls -al"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
@@ -97,6 +98,6 @@ fi
 
 source /usr/local/bin/aws_zsh_completer.sh
 
-export CAREZONE_SLACK_USERNAME='justind'
+export CAREZONE_SLACK_USERNAME='domingusj'
 
 export PATH="/usr/local/sbin:$PATH"
