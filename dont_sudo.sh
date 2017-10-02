@@ -28,7 +28,6 @@ brew cask install visual-studio-code
 # shell packages
 brew install diff-so-fancy
 brew install git
-brew install git
 brew install gpg
 brew install homebrew/gui/meld
 brew install htop
