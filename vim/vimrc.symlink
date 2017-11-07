@@ -9,16 +9,11 @@ Plug 'godlygeek/tabular'
 Plug 'vim-ruby/vim-ruby'
 Plug 'fatih/vim-go'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'honza/vim-snippets'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
 Plug 'w0rp/ale'
-Plug 'yssl/QFEnter'
 Plug 'rakr/vim-one'
 Plug 'chase/vim-ansible-yaml'
 call plug#end()
@@ -57,7 +52,6 @@ set t_8f=[38;2;%lu;%lu;%lum
 let g:ctrlp_map = '<c-p>'     " Ctrl-P plugin mapping
 let g:ctrlp_cmd = 'CtrlP'     " Ctrl-P plugin mapping
 map <C-\> :NERDTreeToggle<CR> " NerdTree mapping
-
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
