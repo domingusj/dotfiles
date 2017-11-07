@@ -15,13 +15,10 @@ brew cask install google-chrome
 brew cask install google-play-music-desktop-player
 brew cask install gpgtools
 brew cask install iterm2
-brew cask install screenhero
 brew cask install slack
 brew cask install spectacle
 brew cask install utc-menu-clock
 brew cask install virtualbox
-brew tap ravenac95/sudolikeaboss
-brew install sudolikeaboss
 brew tap caskroom/fonts
 brew cask install font-inconsolata
 brew cask install visual-studio-code
@@ -44,6 +41,7 @@ brew install wget
 # cloud tools
 brew install awscli
 brew cask install google-cloud-sdk
+brew install kubernetes-helm
 gcloud components install kubectl
 # Hashicorp
 brew install ansible
