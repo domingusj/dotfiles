@@ -96,8 +96,6 @@ else
     eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
 fi
 
-source /usr/local/bin/aws_zsh_completer.sh
-
 export CAREZONE_SLACK_USERNAME='domingusj'
 
 export PATH="/usr/local/sbin:$PATH"
