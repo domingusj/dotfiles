@@ -38,6 +38,7 @@ brew install tree
 brew install vim
 brew install watch
 brew install wget
+brew install lego
 # cloud tools
 brew install awscli
 brew cask install google-cloud-sdk
