@@ -1,7 +1,6 @@
 #!/bin/bash
-# make sure XCode is working first
+# make sure Xcode is working first
 sudo xcodebuild -license
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # oh-my-zsh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" # Homebrew
 brew update
 brew doctor
@@ -25,7 +24,7 @@ brew cask install visual-studio-code
 # shell packages
 brew install diff-so-fancy
 brew install git
-brew install gpg
+brew cask install gpg-suite
 brew install homebrew/gui/meld
 brew install htop
 brew install hub
@@ -40,6 +39,8 @@ brew install watch
 brew install wget
 brew install lego
 brew install sops
+brew install shuttle
+brew install kubeval
 # cloud tools
 brew install awscli
 brew cask install google-cloud-sdk
@@ -50,8 +51,6 @@ brew install ansible
 brew cask install terraform
 brew cask install vagrant
 brew install vagrant-completion
-brew install packer
-brew install packer-completion
 # languages
 brew cask install puppet
 brew install node
@@ -61,13 +60,8 @@ brew install python
 brew install ruby
 gem install bundle
 gem install puppet-lint
-\curl -sSL https://get.rvm.io | bash # RVM
 mkdir ~/go
 brew install go
-# vim
-mv ~/.vimrc ~/.vimrc.bak
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-ln -s ~/projects/dotfiles/vim/vimrc.symlink ~/.vimrc
+brew install rbenv
+
 echo "Done installing, now run ./symlink.sh to setup dotfiles"
-exit 0

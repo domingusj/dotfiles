@@ -4,18 +4,8 @@ set nocompatible
 call plug#begin('~/.vim/plugged')
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'rodjek/vim-puppet'
-Plug 'godlygeek/tabular'
-Plug 'vim-ruby/vim-ruby'
-Plug 'fatih/vim-go'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-fugitive'
-Plug 'honza/vim-snippets'
-Plug 'w0rp/ale'
 Plug 'rakr/vim-one'
-Plug 'chase/vim-ansible-yaml'
 call plug#end()
 
 syntax enable             " enable syntax highlighting

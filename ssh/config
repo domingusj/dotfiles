@@ -1,4 +1,12 @@
 AddKeysToAgent yes
+#
+Host jumpbox.czops.net
+  User justind_carezone_com
+  ProxyCommand none
+Host 192.168.* *.czops.net
+  ProxyCommand ssh -W %h:%p jumpbox.czops.net
+Host 10.*.* *.corp.carezone.com
+  ProxyCommand ssh -W %h:%p jumpbox.czops.net
 
 Host *
 ServerAliveInterval 60
@@ -17,4 +25,3 @@ Host *.corp.carezone.com
 User justind
 PreferredAuthentications publickey
 IdentityFile ~/.ssh/justind_rsa
-
