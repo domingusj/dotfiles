@@ -5,9 +5,10 @@ sudo xcodebuild -license
 brew update
 brew doctor
 brew tap caskroom/cask
+brew tap homebrew/cask-versions
 # brew packages
 brew cask install 1password
-brew cask install docker
+brew cask install docker-edge
 brew cask install dropbox
 brew cask install flux
 brew cask install google-chrome
