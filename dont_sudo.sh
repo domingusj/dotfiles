@@ -54,6 +54,7 @@ brew cask install vagrant
 brew install vagrant-completion
 # languages
 brew cask install puppet
+brew install nvm
 brew install node
 brew install npm
 brew install python3
