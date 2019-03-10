@@ -1,0 +1,34 @@
+- name: Install packages
+  package: name={{item}}
+  with_items:
+    - awscli
+    - diff-so-fancy
+    - git
+    - go
+    - homebrew/gui/meld
+    - htop
+    - htop
+    - hub
+    - jq
+    - kubernetes-helm
+    - kubeval
+    - lego
+    - ncdu
+    - node
+    - npm
+    - nvm
+    - python
+    - python3
+    - rbenv
+    - reattach-to-user-namespace
+    - ruby
+    - shuttle
+    - sops
+    - tmux
+    - tmux
+    - transcrypt
+    - tree
+    - vagrant-completion
+    - vim
+    - watch
+    - wget

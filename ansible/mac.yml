@@ -1,0 +1,8 @@
+- hosts: localhost
+  pre_tasks:
+
+  tasks:
+    - include: tasks/packages.yml
+    - include: tasks/homebrew_taps.yml
+    - include: tasks/homebrew_cask_packages.yml
+

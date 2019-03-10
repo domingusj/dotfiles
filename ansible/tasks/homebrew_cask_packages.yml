@@ -1,0 +1,23 @@
+- name: Install packages via homebrew cask
+  homebrew_cask: name={{item}}
+  with_items:
+    - 1password
+    - docker-edge
+    - dropbox
+    - flux
+    - font-inconsolata
+    - google-chrome
+    - google-cloud-sdk
+    - google-play-music-desktop-player
+    - gpg-suite
+    - gpgtools
+    - iterm2
+    - puppet
+    - slack
+    - slack
+    - spectacle
+    - terraform
+    - utc-menu-clock
+    - vagrant
+    - virtualbox
+    - visual-studio-code
