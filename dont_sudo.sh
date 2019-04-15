@@ -5,4 +5,8 @@ sudo xcodebuild -license
 brew update
 brew doctor
 brew install ansible
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # oh-my-zsh
+
 echo "Done installing, now run ansible to setup dotfiles"

@@ -62,7 +62,7 @@ ZSH_THEME="af-magic-short"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize colored-man-pages virtualenv tmux brew brew-cask gem history history-substring-search vagrant docker docker-machine docker-compose terraform kubectl zsh-navigation-tools you-should-use)
+plugins=(git colorize colored-man-pages virtualenv tmux brew gem history history-substring-search vagrant docker docker-compose terraform kubectl zsh-navigation-tools)
 # User configuration
 export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,32 +98,23 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python='python3'
-alias k="/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin/kubectl"
-alias gpg="gpg1"
+alias k="kubectl"
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 source <(kubectl completion zsh)
-source <(minikube completion zsh)
 source <(helm completion zsh)
-complete -o nospace -o default -F _python_argcomplete "gcloud"
-complete -o default -F _bq_completer bq
-complete -o nospace -F _python_argcomplete gsutil
 
-if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
-    source ~/.gnupg/.gpg-agent-info
-    export GPG_AGENT_INFO
-else
-    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-fi
+#if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+#    source ~/.gnupg/.gpg-agent-info
+#    export GPG_AGENT_INFO
+#else
+#    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+#fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
-export CAREZONE_SLACK_USERNAME='domingusj'
-
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"

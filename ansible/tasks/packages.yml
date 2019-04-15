@@ -5,13 +5,11 @@
     - diff-so-fancy
     - git
     - go
-    - homebrew/gui/meld
-    - htop
     - htop
     - hub
     - jq
+    - kubectl
     - kubernetes-helm
-    - kubeval
     - lego
     - ncdu
     - node
@@ -22,9 +20,7 @@
     - rbenv
     - reattach-to-user-namespace
     - ruby
-    - shuttle
     - sops
-    - tmux
     - tmux
     - transcrypt
     - tree

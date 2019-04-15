@@ -1,9 +1,6 @@
 #!/bin/bash
 mkdir ~/projects ~/ansible ~/.ssh || true
 
-# oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" # oh-my-zsh
-
 # vim
 mv ~/.vimrc ~/.vimrc.bak
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \

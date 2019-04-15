@@ -12,12 +12,11 @@
     - gpg-suite
     - gpgtools
     - iterm2
+    - meld
     - puppet
-    - slack
     - slack
     - spectacle
     - terraform
     - utc-menu-clock
     - vagrant
-    - virtualbox
     - visual-studio-code
