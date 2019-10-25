@@ -62,16 +62,12 @@ ZSH_THEME="af-magic-short"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize colored-man-pages virtualenv tmux brew gem history history-substring-search vagrant docker docker-compose terraform kubectl zsh-navigation-tools)
+plugins=(git colorize colored-man-pages virtualenv history history-substring-search vagrant docker docker-compose terraform kubectl zsh-navigation-tools)
 # User configuration
 export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin
 # export MANPATH="/usr/local/man:$MANPATH"
-export GOPATH=~/go
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:/usr/local/opt/gnupg/libexec/gpgbin # gpg
+
 source $ZSH/oh-my-zsh.sh
-#
-eval "$(rbenv init -)"
 #
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -99,22 +95,29 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="kubectl"
+alias pbcopy='xclip -selection clipboard'
+alias pbpaste='xclip -selection clipboard -o'
+alias mon='gsettings set org.gnome.desktop.interface text-scaling-factor'
+
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+source /usr/share/google-cloud-sdk/completion.zsh.inc
+
 source <(kubectl completion zsh)
-source <(helm completion zsh)
-
-#if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
-#    source ~/.gnupg/.gpg-agent-info
-#    export GPG_AGENT_INFO
-#else
-#    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-#fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+#source <(helm completion zsh)
 
 export PATH="/usr/local/sbin:$PATH"
+
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi
+
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
