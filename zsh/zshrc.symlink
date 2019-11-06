@@ -62,7 +62,7 @@ ZSH_THEME="af-magic-short"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize colored-man-pages virtualenv history history-substring-search vagrant docker docker-compose terraform kubectl zsh-navigation-tools)
+plugins=(git colorize colored-man-pages virtualenv history history-substring-search vagrant docker docker-compose terraform kubectl zsh-navigation-tools history-sync)
 # User configuration
 export PATH=$PATH:$HOME/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/puppetlabs/bin:$HOME/.linuxbrew/bin
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -120,4 +120,17 @@ eval "$(pyenv virtualenv-init -)"
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# sync history
+ZSH_HISTORY_FILE_NAME=".zsh_history"
+ZSH_HISTORY_FILE="${HOME}/${ZSH_HISTORY_FILE_NAME}"
+ZSH_HISTORY_PROJ="${HOME}/.zsh_history_proj"
+ZSH_HISTORY_FILE_ENC_NAME="zsh_history"
+ZSH_HISTORY_FILE_ENC="${ZSH_HISTORY_PROJ}/${ZSH_HISTORY_FILE_ENC_NAME}"
+GIT_COMMIT_MSG="latest $(date)"
+
+# no dupes
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
 
