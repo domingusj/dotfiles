@@ -40,9 +40,5 @@
 	program = gpg
 [rerere]
 	enabled = true
-[diff "sopsdiffer"]
-	textconv = sops -d
 [alias]
 	lgb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
-[url "git@github.com:"]
-	insteadOf = https://github.com/
