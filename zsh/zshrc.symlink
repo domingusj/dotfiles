@@ -95,6 +95,7 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="kubectl"
+alias helm="helm3"
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
 alias mon='gsettings set org.gnome.desktop.interface text-scaling-factor'
@@ -104,7 +105,7 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/google-cloud-sdk/completion.zsh.inc
 
 source <(kubectl completion zsh)
-#source <(helm completion zsh)
+source <(helm completion zsh)
 
 export PATH="/usr/local/sbin:$PATH"
 
@@ -134,3 +135,5 @@ setopt HIST_SAVE_NO_DUPS
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 
+
+export PATH="$HOME/go/bin:$PATH"
