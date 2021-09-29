@@ -15,6 +15,10 @@ mv ~/.zshrc ~/.zshrc.bak
 ln -s $(pwd)/zsh/zshrc.symlink ~/.zshrc
 ln -s $(pwd)/zsh/af-magic-short.zsh-theme ~/.oh-my-zsh/themes/af-magic-short.zsh-theme
 
+# windows pbcopy/pbpaste
+sudo ln -s $(pwd)/windows/pbcopy /usr/local/bin/pbcopy
+sudo ln -s $(pwd)/windows/pbpaste /usr/local/bin/pbpaste
+
 # zsh / shell config
 cd ~/.oh-my-zsh && git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 
