@@ -97,13 +97,12 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias k="kubectl"
-alias pbcopy='xclip -selection clipboard'
-alias pbpaste='xclip -selection clipboard -o'
 alias mon='gsettings set org.gnome.desktop.interface text-scaling-factor'
 
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source <(kubectl completion zsh)
+source <(helm completion zsh)
 
 export PATH="/usr/local/sbin:$PATH"
 
@@ -117,3 +116,5 @@ setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
 
 export PATH="$HOME/go/bin:$PATH"
+eval "$(pyenv init -)"
+
