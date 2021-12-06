@@ -120,3 +120,8 @@ setopt HIST_IGNORE_ALL_DUPS
 export PATH="$HOME/go/bin:$PATH"
 eval "$(pyenv init -)"
 
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+export PATH="$HOME/.tfenv/bin:$PATH"
+
+export PATH=$PATH:/usr/local/go/bin

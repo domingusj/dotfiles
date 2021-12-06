@@ -1,7 +1,7 @@
 [user]
     name = Justin Domingus
-    email = domingusj@gmail.com
-	signingkey = CFAB45B2
+    email = jdomingus@resolutionbio.com
+    signingkey = 0E028C4D3DE4C00F
 [core]
     editor = vim
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
