@@ -103,6 +103,8 @@ source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source <(kubectl completion zsh)
 source <(helm completion zsh)
+source <(flux completion zsh)
+source <(argocd completion zsh)
 
 export PATH="/usr/local/sbin:$PATH"
 
